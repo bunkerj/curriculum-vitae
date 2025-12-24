@@ -1,0 +1,36 @@
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.nlo
+*.nls
+
+# Temporary files
+*~
+*.swp
+*.swo
+*#*
+
+# PDF in source directory (keep only root PDF)
+source/*.pdf
+
+# Build directories
+_out_/
+
+# Documents directory (publications, presentations, theses, etc.)
+documents/
+
+# OS files
+.DS_Store
+Thumbs.db
