@@ -5,44 +5,56 @@
 
 % ModernCV theme
 \moderncvstyle{banking}
-\moderncvcolor{blue}
+\moderncvcolor{black}
 
 % Character encoding
 \usepackage[utf8]{inputenc}
 
 % Adjust page margins
-\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.90]{geometry}
 \setlength{\hintscolumnwidth}{3cm}
 
 % Personal data
 \name{Justin}{Bunker}
 \phone[mobile]{+44~07444~056421}
-\email{justin\_bunker@hotmail.com}
-\social[linkedin]{justin-bunker}
-\extrainfo{Cambridge, United Kingdom}
+\email{jb200@cantab.ac.uk}
+\social[linkedin]{bunkerj}
+% TODO: Add your GitHub username below (uncomment when ready)
+% \social[github]{yourusername}
+% TODO: Add your Google Scholar ID below (uncomment when ready)
+% \homepage{scholar.google.com/citations?user=YOURID}
+\extrainfo{Montreal, Canada}
 
 \begin{document}
 
 \makecvtitle
 
-\section{Research Interests}
-\cvitem{}{Machine learning, Bayesian inference, generative models, probabilistic modeling, and applications to finance and quantitative trading}
+% Clear footer completely on all pages
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0pt}
+
+\section{Professional Summary}
+\cvitem{}{Machine learning researcher completing PhD at University of Cambridge with a publication in Journal of Machine Learning Research. Expertise in generative models, statistical learning, and deep learning developed through research on diffusion models and functional autoencoders. Previous experience developing proprietary trading software at DRW and quantitative analysis tools at Société Générale. Strong foundation in both advanced machine learning theory and practical software engineering in financial environments.}
 
 \section{Education}
 
-\cventry{2020--2025}{PhD in Machine Learning}{University of Cambridge}{Cambridge, UK}{}{
+\cventry{2020--2026}{PhD in Machine Learning}{University of Cambridge}{Cambridge, UK}{}{
 \begin{itemize}
 \item \textbf{Splunk Scholar} -- Fully funded by Splunk Inc.
-\item Thesis submission: January 2025
-\item Research focus: Generative models, diffusion models, Bayesian methods, applications to remote sensing and ice monitoring
-\item Published in Journal of Machine Learning Research (JMLR)
+\item Thesis submission: January 2026 % TODO: Add final thesis title once confirmed
+\item Published ``Autoencoders in Function Space'' in Journal of Machine Learning Research (JMLR)
+\item Developed novel diffusion models for high-dimensional synthetic image generation
+\item Applied generative models and deep learning methods to improve segmentation with limited labeled data
+\item Research areas: Generative models (diffusion, VAEs), statistical learning, functional data analysis
+\item Collaborated with domain experts in remote sensing and presented research at international conferences
 \end{itemize}}
 
-\cventry{2018--2019}{MPhil in Machine Learning and Machine Intelligence}{University of Cambridge}{Cambridge, UK}{Distinction}{
+\cventry{2018--2019}{MPhil in Machine Learning and Machine Intelligence}{University of Cambridge}{Cambridge, UK}{}{
 \begin{itemize}
 \item Thesis: \textit{Extending and Applying the Gaussian Process Autoregressive Regression Model}
-\item Covered: Linear models, neural networks, kernel methods, graphical models, Bayesian inference
-\item Group project: Variational inference for continual learning
+\item Covered: Linear models, neural networks, graphical models, statistical inference
+\item Group project: Deep learning methods for continual learning
 \end{itemize}}
 
 \cventry{2017--2018}{Independent Student (Part-time)}{Concordia University}{Montreal, QC}{}{
@@ -61,109 +73,62 @@
 
 \cventry{2009--2012}{DEC in Electronics Engineering Technology}{Dawson College}{Montreal, QC}{}{
 \begin{itemize}
+\item Specialization in Computers and Networks
 \item Graduated with honors
 \end{itemize}}
 
-\section{Research Experience}
-
-\cventry{2020--2025}{PhD Researcher}{University of Cambridge}{Cambridge, UK}{}{
-\begin{itemize}
-\item Developed novel diffusion models for generating synthetic SAR imagery of Arctic sea ice
-\item Applied generative models to improve segmentation performance with limited labeled data
-\item Collaborated with domain experts in remote sensing and cryosphere modeling
-\item Published research in top-tier machine learning venues (JMLR)
-\end{itemize}}
-
-\cventry{2019--2020}{Research Assistant}{University of Cambridge}{Cambridge, UK}{}{
-\begin{itemize}
-\item Collaborated with Splunk Inc. on machine learning research projects
-\item Developed mixture modeling techniques for complex data distributions
-\item Co-authored research paper on mixture modeling methodologies
-\end{itemize}}
-
-\section{Publications}
-
-\subsection{Journal Articles}
-\cvitem{2024}{\textbf{Bunker, J.} \& Lambley, H. ``Autoencoders in Function Space.'' \textit{Journal of Machine Learning Research (JMLR)}, accepted.}
-
-\subsection{Conference Papers \& Technical Reports}
-\cvitem{2024}{\textbf{Bunker, J.} et al. ``Pothole Detection Using Machine Learning.'' [Details to be updated]}
-\cvitem{2020}{\textbf{Bunker, J.} et al. ``Mixture Modeling for [Title].'' Research collaboration with Splunk Inc.}
-
-\subsection{Theses}
-\cvitem{2025}{\textbf{Bunker, J.} ``[PhD Thesis Title].'' PhD Thesis, University of Cambridge. [Forthcoming]}
-\cvitem{2019}{\textbf{Bunker, J.} ``Extending and Applying the Gaussian Process Autoregressive Regression Model.'' MPhil Thesis, University of Cambridge.}
-
-\section{Presentations}
-
-\cventry{2025}{Conference Presentation}{EGU25}{Vienna, Austria}{}{
-\begin{itemize}
-\item \textit{``Synthetic SAR Imagery Generation Using Diffusion Models for Ice Floe Monitoring''}
-\item Presented novel application of diffusion models to cryosphere remote sensing
-\end{itemize}}
-
-\cventry{2024}{Invited Talk}{Physics X}{London, UK}{}{
-\begin{itemize}
-\item \textit{``Autoencoders in Function Space''}
-\item Presented JMLR paper on functional autoencoders
-\end{itemize}}
-
-\cventry{2023}{Internal Symposium}{University of Cambridge}{Cambridge, UK}{}{
-\begin{itemize}
-\item \textit{``Introduction to JAX for Machine Learning''}
-\item Technical tutorial on JAX framework for ML research
-\end{itemize}}
-
-\cventry{2022--2024}{Recurring Seminar}{University of Cambridge}{Cambridge, UK}{}{
-\begin{itemize}
-\item \textit{``Introduction to Machine Learning for Civil Engineering Researchers''}
-\item Annual presentation to incoming postdoctoral researchers (2022, 2023, 2024)
-\end{itemize}}
-
-\section{Teaching Experience}
-
-\cventry{2022--2024}{Supervisor}{University of Cambridge}{Cambridge, UK}{}{
-\begin{itemize}
-\item Supervised small-group teaching sessions for \textbf{3M1: Mathematical Methods}
-\item Part IIA Engineering Tripos (3 years: 2022, 2023, 2024)
-\item Topics: Calculus of variations, numerical methods, partial differential equations
-\end{itemize}}
-
-\subsection{MEng Project Supervision}
-\cvitem{2024}{\textbf{Shuohan Tao} -- ``Enhancing the Normalizing Flow on the Function Space''}
-\cvitem{2024}{\textbf{Prithvi Raj} -- ``Thermodynamic Integration''}
-\cvitem{2021}{\textbf{Jay Wong} -- ``Design of Experiments for Bayesian Partition Models''}
+\enlargethispage{1.5\baselineskip}
 
 \section{Professional Experience}
 
+\cventry{2019--2020}{Research Assistant}{University of Cambridge}{Cambridge, UK}{}{
+\begin{itemize}
+\item Collaborated with Splunk Inc. on machine learning research for complex data distributions
+\item Developed mixture modeling techniques and statistical learning methods
+\item Co-authored paper on advanced mixture modeling methodologies
+\end{itemize}}
+
+\nopagebreak
 \cventry{Nov 2016--Sep 2018}{Software Developer}{Vigilant Global -- A DRW Company}{Montreal, QC}{}{
 \begin{itemize}
-\item Implemented features for proprietary trading software tools
-\item Refactored codebases to optimize performance and incorporate modern frameworks
-\item Designed full-stack system for training candidates in simulated trading scenarios
-\item Applied quantitative and analytical skills in high-frequency trading environment
+\item Developed features for proprietary trading software in high-frequency trading environment
+\item Designed and implemented full-stack training system for candidate evaluation in simulated trading scenarios
+\item Refactored legacy codebases to improve performance and integrate modern frameworks
+\item Applied quantitative and analytical skills to build tools supporting systematic trading strategies
 \end{itemize}}
 
 \cventry{Jan 2015--Aug 2015}{Software Developer (Co-op)}{Société Générale}{Montreal, QC}{}{
 \begin{itemize}
 \item Implemented features in C\# for collateral monitoring application in trading operations
-\item Migrated financial reports to SSRS framework
-\item Managed full development lifecycle from design to production deployment
-\item Presented technical work to stakeholders in business setting
+\item Migrated financial reports to SSRS framework, managing full development lifecycle
+\item Presented technical solutions to business stakeholders in investment banking division
 \end{itemize}}
 
 \cventry{Aug 2013--Dec 2013}{Software Developer (Co-op)}{Ericsson}{Montreal, QC}{}{
 \begin{itemize}
 \item Developed Python automation scripts for OSS network benchmarking
-\item Reduced data extraction time from 8 hours to 2 hours through process optimization
+\item Reduced data extraction time from 8 hours to 2 hours through process optimization (75\% improvement)
 \end{itemize}}
+
+\section{Publications}
+
+\cvitem{2024}{\textbf{Bunker, J.} \& Lambley, H. ``Autoencoders in Function Space.'' \textit{Journal of Machine Learning Research (JMLR)}, accepted.}
+
+\cvitem{2023}{\textbf{Bunker, J.} et al. ``Pothole Detection Using Machine Learning.'' EWGT2023 (European Working Group on Transportation).}
+
+\cvitem{2022}{\textbf{Bunker, J.}, Curtis, K., Girolami, M., \& Sriharsha, R. ``A mixture modeling approach for clustering log files with coreset and user feedback.'' \textit{Pattern Recognition Letters}, 156, 74--80.}
+
+\section{Selected Theses}
+
+\cvitem{2026}{\textbf{Bunker, J.} ``[PhD Thesis Title].'' PhD Thesis, University of Cambridge. (Forthcoming)}
+\cvitem{2019}{\textbf{Bunker, J.} ``Extending and Applying the Gaussian Process Autoregressive Regression Model.'' MPhil Thesis, University of Cambridge.}
 
 \section{Technical Skills}
 
-\cvitem{Languages}{Python, C/C++, JAX, JavaScript, Java, C\#, MATLAB}
-\cvitem{ML/AI}{PyTorch, TensorFlow, JAX, scikit-learn, probabilistic programming}
-\cvitem{Methods}{Deep learning, generative models, Bayesian inference, kernel methods, optimization}
-\cvitem{Tools}{Git, Linux, \LaTeX, Jupyter, SQL, Docker}
+\cvitem{Programming}{Python, C/C++, SQL}
+\cvitem{ML Frameworks}{PyTorch, TensorFlow, JAX, scikit-learn, Keras}
+\cvitem{Specialized Skills}{Generative models (diffusion, VAEs, normalizing flows), statistical learning, deep learning, optimization, data analysis}
+\cvitem{Tools \& Systems}{Git, Linux, Docker, \LaTeX, Jupyter, HPC clusters}
 
 \section{Awards \& Scholarships}
 
@@ -171,13 +136,31 @@
 \cvitem{2016}{\textbf{Computer Engineering Medal} -- Top graduating student, Concordia University}
 \cvitem{2012--2016}{\textbf{Russell Breen Scholarship} -- Academic excellence, Concordia University}
 
+\section{Selected Presentations}
+
+\cvitem{2025}{\textit{``Synthetic SAR Imagery Generation Using Diffusion Models for Ice Floe Monitoring''} -- EGU25 Conference, Vienna, Austria}
+
+\cvitem{2024}{\textit{``Autoencoders in Function Space''} -- Invited Talk, Physics X, London, UK}
+
+\cvitem{2022--2024}{\textit{``Introduction to Machine Learning for Civil Engineering Researchers''} -- Annual seminar, University of Cambridge}
+
+\section{Teaching Experience}
+
+\cventry{2022--2024}{Supervisor}{University of Cambridge}{Cambridge, UK}{}{
+\begin{itemize}
+\item Supervised small-group teaching sessions for \textbf{3M1: Mathematical Methods}
+\item Part IIA Engineering Tripos (3 years: 2022, 2023, 2024)
+\item Topics: Linear algebra, stochastic processes, optimization methods
+\end{itemize}}
+
+\subsection{MEng Project Supervision}
+\cvitem{2024}{\textbf{Shuohan Tao} -- ``Enhancing the Normalizing Flow on the Function Space''}
+\cvitem{2024}{\textbf{Prithvi Raj} -- ``Thermodynamic Integration''}
+\cvitem{2021}{\textbf{Jay Wong} -- ``Design of Experiments for Bayesian Partition Models''}
+
 \section{Languages}
 
 \cvitemwithcomment{English}{Native speaker}{}
 \cvitemwithcomment{French}{Native speaker}{Fully bilingual}
-
-\section{Additional Information}
-
-\cvitem{}{Currently completing advanced study in quantitative finance and investments, with particular interest in applying machine learning to financial modeling and algorithmic trading}
 
 \end{document}
